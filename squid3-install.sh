@@ -1,13 +1,13 @@
 #!/bin/bash
 
 ############################################################
-# Squid Proxy Installer
-# Author: Yujin Boby
-# Email: admin@serverOk.in
-# Github: https://github.com/serverok/squid-proxy-installer/
-# Web: https://serverok.in/squid
+# SKY Proxy Installer
+# Author: SKYRHRGTS
+# Email: admin@skyrhrgts.com
+# Github: https://github.com/skyrhrgts/sky-proxy-installer/
+# Web: https://skyrhrgts.com/
 # If you need professional assistance, reach out to
-# https://serverok.in/contact
+# https://skyrhrgts.com/contact-us/
 ############################################################
 
 if [ `whoami` != root ]; then
@@ -45,7 +45,7 @@ if [ $SOK_OS == "ERROR" ]; then
     exit 1;
 fi
 
-echo -e "Installing squid on ${SOK_OS}, please wait....\n"
+echo -e "Installing sky on ${SOK_OS}, please wait....\n"
 
 if [ $SOK_OS == "ubuntu2404" ]; then
     /usr/bin/apt update > /dev/null 2>&1
@@ -222,9 +222,9 @@ CYAN='\033[0;36m'
 NC='\033[0m'
 
 echo -e "${NC}"
-echo -e "${GREEN}Thank you for using SKYTatkalVPS Proxy Service${NC}"
+echo -e "${GREEN}Thank you for using SKYRHRGTS.com Proxy Service.${NC}"
 echo
-echo -e "${CYAN} ip:3128:skytatkalvps:skytatkalvps User & Pass : skytatkalvps${NC}"
-
-sudo /usr/bin/htpasswd -b -c /etc/squid/passwd skytatkalvps skytatkalvps
-sudo systemctl reload squid
+echo -e "${CYAN}Username : ${SQUID_USER}${NC}"
+echo -e "${CYAN}Password : ${SQUID_PW}${NC}"
+echo -e "${CYAN}Port : 3128${NC}"
+echo -e "${NC}"
