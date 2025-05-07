@@ -222,9 +222,9 @@ CYAN='\033[0;36m'
 NC='\033[0m'
 
 echo -e "${NC}"
-echo -e "${GREEN}Thank you for using AD Proxy Service${NC}"
+echo -e "${GREEN}Thank you for using SKYTatkalVPS Proxy Service${NC}"
 echo
-echo -e "${CYAN}Already created a proxy user for skytatkalvps${NC}"
+echo -e "${CYAN} ip:3128:skytatkalvps:skytatkalvps User & Pass : skytatkalvps${NC}"
 
 sudo /usr/bin/htpasswd -b -c /etc/squid/passwd skytatkalvps skytatkalvps
 sudo systemctl reload squid
